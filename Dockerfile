@@ -1,4 +1,3 @@
-FROM node:alpine 
-WORKDIR /rishika 
-COPY . /rishika 
-CMD ["node", "app.js"] 
+FROM nginx:alpine
+COPY . /usr/share/nginx/html 
+
